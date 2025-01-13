@@ -16,6 +16,8 @@ function ChessBoard({chess ,board, socket, setBoard}: {
 
   const [from, setFrom ] = useState<Square | null>(null);
   const [to, setTo] = useState<Square | null>(null);
+  console.log(to);
+  
   return (
     <div>
       {board.map((row, i) => (

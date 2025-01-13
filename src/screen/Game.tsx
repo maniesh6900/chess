@@ -20,7 +20,7 @@ function Game() {
     if (!socket){
       return;
     } 
-
+    console.log(setChess);
     socket.onmessage = (event) => {
       const message = JSON.parse(event.data)
       switch (message.type) {

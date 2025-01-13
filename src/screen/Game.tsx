@@ -20,9 +20,11 @@ function Game() {
     if (!socket){
       return;
     } 
-    console.log(setChess);
+     setChess && console.log(setChess);
     socket.onmessage = (event) => {
       const message = JSON.parse(event.data)
+      console.log(message);
+      
       switch (message.type) {
         case INIT_GAME:
           setBoard(chess.board())

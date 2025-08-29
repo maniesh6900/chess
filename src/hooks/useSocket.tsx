@@ -1,10 +1,6 @@
 import  {useEffect, useState} from 'react';
 
-<<<<<<< HEAD
 const web_url = 'https://chess-backend-yeir.onrender.com';
-=======
-const web_url = 'https://chess-backend-yeir.onrender.com'
->>>>>>> ba45f8ca806b5db248f2e1d4b376f3afedd58418
 
 function useSocket() {
     const [socket, setSocket] = useState<WebSocket | null>(null);
